@@ -1,0 +1,1 @@
+require 'routes_dont_work/route_checker'
