@@ -5,7 +5,9 @@ particular, it tests that:
 - The controller has a public method named the same as the action, or a view exists in the view lookup path for that
 controller.
 
-After it identifies these routes, you should fix or remove them!
+A very common case of broken routes is the use of RESTful routes without defining all the actions (index, show, new, create, edit, update, and destroy). If you don't need all of these actions, you can use the [`only` and `except` options of the `resources` block](http://guides.rubyonrails.org/routing.html#restricting-the-routes-created).
+
+After routes_dont_work identifies these routes, you should fix or remove them. Be careful if removing, because if, for example, you have a view that generates a link with the broken route, removing the route without removing the reference will make the view raise an exception.
 
 ## Usage
 
