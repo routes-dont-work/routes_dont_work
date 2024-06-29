@@ -1,3 +1,7 @@
+**Rails 7.1 has added `rails routes --unused` which does the same thing as routes_dont_work. We suggest you use that instead now.**
+
+---
+
 routes_dont_work provides a test to ensure that all the routes in your Rails app actually route to something. In
 particular, it tests that:
 
